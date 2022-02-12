@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Searching string with indexof and lastindexof</title>
+	<script type="text/javascript">
+		var letters="abcdefghijklmnopqrstuvwxyz";
+		function buttonpressed(){
+			searchform.first.value=letters.indexOf(searchform.inputVal.value);
+			searchform.last.value=letters.lastIndexOf(searchform.last.value);
+			searchform.first12.value=letters.indexOf(searchform.first12.value);
+			searchform.last12.value=letters.lastIndexOf(searchform.last12.value);
+		}
+	</script>
+</head>
+<body>
+	<form name="searchform" action="">
+		<h1>The string to search is:<br>abcdefghijklmnopqrstuvwzyzabxcdefghijklm</h1>
+		<p>Enter a substring to search for 
+			<input name="inputVal" type="text"/><br>
+			<input type="button" name="search" value="search" onclick="buttonpressed()"/><br>
+		</p>
+		<p>First occurence located at index
+			<input type="text" name="first" size="5"/>
+		<p>Last occurence located at index
+			<input type="text" name="last" size="5"/>
+		</p>
+
+		<p>
+			First occurence located at index 12
+			<input type="text" name="first12" size="5"/>
+		</p>
+		<p>Last occurence located at index 12
+			<input type="text" name="last12" text="5"/>
+			
+		</p>
+		
+
+		
+	</form>
+
+
+</body>
+</html>
