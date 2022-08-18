@@ -2,10 +2,39 @@
     <head>
         <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .topnav {
+            overflow: hidden;
+            background-color: #FFFFFF;
+            }
+           .topnav a{
+            float: left;
+            color: #000000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+
+           }
+            .topnav a:hover {
+            background-color: #0000FF;
+            color: black;
+            }
+            .topnav-right {
+            float: right;
+            }
+        </style>
     </head>
     
     <body>
-        <div class="topnav">            
+        <div class="topnav">
+            <div class="topnav-right">            
+                <a class="active" href="{{ url_for('homepage') }}">Home</a>  
+                <a href="{{ url_for('aboutpage') }}">About</a>
+                <a href="{{ url_for('contactpage') }}">Contact Us</a>
+            </div>
+
+        </div><div class="topnav">            
             <a class="active" href="{{ url_for('homepage') }}">Home</a>  
             <a href="{{ url_for('aboutpage') }}">About</a>
             <a href="{{ url_for('contactpage') }}">Contact Us</a>
